@@ -1,0 +1,67 @@
+---
+title: "Introduction to Machine Learning Assignment"
+author: "Michael Gonzalez"
+date: "May 09, 2019"
+output:
+  
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ggplot2)
+
+binClass <- read.csv('binary-classifier-data.csv')
+triClass <- read.csv('trinary-classifier-data.csv')
+
+```
+
+## A. Plot the data from each dataset using a scatter plot.
+
+Scatter plot of the binary classifier data: 
+
+```{r echo = FALSE}
+ggplot(binClass, aes(x = x, y = y)) + geom_point()
+
+```
+
+Scatter plot of the trinary classifier data:
+
+```{r echo = FALSE}
+ggplot(triClass, aes(x = x, y = y)) + geom_point()
+
+```
+
+## B. Fit a k nearest neighbors model for each dataset for k=3, k=5, k=10, k=15, k=20, and k=25. Compute the accuracy of the resulting models for each value of k. Plot the results in a graph where the x-axis is the different values of k and the y-axis is the accuracy of the model.
+
+Plot of the binary classifier data: 
+
+```{r echo = FALSE}
+binKvalues <- c(3, 5, 10, 15, 20, 25)
+binPercents <- c(99, 97, 93, 90, 87, 87)
+binDf <- data.frame(Kvalues = binKvalues, Percents = binPercents)
+
+ggplot(binDf, aes(x = Kvalues, y = Percents)) +
+  geom_line() +
+  labs(title = "Accuracy Model of Binary Classifiers", x = "K Values", y = "Accuracy of Model (%)")
+```
+
+
+Plot of the trinary classifier data:
+
+```{r echo = FALSE}
+triKvalues <- c(3, 5, 10, 15, 20, 25)
+triPercents <- c(97, 95, 90, 84, 81, 78)
+triDf <- data.frame(Kvalues = triKvalues, Percents = triPercents)
+
+ggplot(triDf, aes(x = Kvalues, y = Percents)) +
+  geom_line() +
+  labs(title = "Accuracy Model of Trinary Classifiers", x = "K Values", y = "Accuracy of Model (%)")
+```
+
+
+## C. Looking back at the plots of the data, do you think a linear classifier would work well on these datasets?
+
+I do believe that linear classifier might give better results to see the data sets. Comparing these plots to the scatter plots, the data is clear for anyone to see the results.
+
