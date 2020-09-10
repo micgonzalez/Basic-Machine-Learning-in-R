@@ -11,5 +11,5 @@ Machine learning, while built upon statistical foundations, often uses slightly 
 
 Machine learning algorithms fall into one of two broad categories; supervised and unsupervised algorithms. Supervised algorithms use datasets with known inputs and outputs to train a machine learning model. Supervised algorithms are like teacher guiding student learning using homework assignments with known answers. Unsupervised algorithms look for patterns and structure in datasets without known outputs.
 
-This is unsupervised learning using the k-means clustering algorithm and supervised learning using the k-nearest neighbors algorithm.
+This repository is a mixture of unsupervised learning using the k-means clustering algorithm and supervised learning using the k-nearest neighbors algorithm.
 
