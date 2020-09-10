@@ -1,4 +1,4 @@
-# Basic-Machine-Learning-in-R
+# Basic-Machine-Learning-in-R-side-project
 Fitting a model is when you use the input data to create a predictive model. There are various metrics you can use to determine how well your model fits the data. I am using the R program to learn the basics of machine learning, from using python code, CSV files and the ggplot2, pandas, numpy and sklearn packages.
 
 I learned how to create statistical models using linear regression. linear regression is one of many machine learning algorithms. Machine learning algorithms use statistics to teach computers how to perform certain tasks by learning from data rather than being explicitly programmed to perform those tasks.
